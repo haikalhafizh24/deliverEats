@@ -1,16 +1,47 @@
-# starting_project
+# DeliverEats
 
-A new Flutter project.
+DeliverEats adalah aplikasi yang dirancang untuk memudahkan pengguna dalam memesan makanan dari berbagai restoran.
 
-## Getting Started
+## Fitur
 
-This project is a starting point for a Flutter application.
+- **Navigasi Bawah**: Memudahkan pengguna untuk berpindah antar halaman utama.
+- **Detail Restoran**: Menampilkan informasi lengkap tentang restoran.
+- **Profil Pengguna**: Mengelola informasi pengguna.
+- **Ringkasan Pesanan**: Menampilkan ringkasan pesanan pengguna.
 
-A few resources to get you started if this is your first Flutter project:
+## Struktur Proyek
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- `lib/domain/core`: Berisi definisi dan pengelolaan kesalahan aplikasi.
+- `lib/core/utils`: Berisi modul utilitas dan pengamat BLoC sederhana.
+- `lib/application/bottom_navigation`: Mengelola logika navigasi bawah menggunakan Cubit.
+- `lib/presentation/pages`: Berisi halaman-halaman utama aplikasi seperti detail restoran, profil, dan ringkasan pesanan.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalasi
+
+1. Clone repository ini:
+   ```bash
+   git clone https://github.com/haikalhafizh24/deliverEats.git
+   ```
+
+2. Masuk ke direktori proyek:
+   ```bash
+   cd deliverEats
+   ```
+
+3. Instal dependensi:
+   ```bash
+   flutter pub get
+   ```
+
+4. Jalankan aplikasi:
+   ```bash
+   flutter run
+   ```
+
+## Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan fork repository ini dan buat pull request dengan perubahan Anda.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
