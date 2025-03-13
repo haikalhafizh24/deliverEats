@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:deliver_eats/core/commons/assets_path.dart';
 import 'package:deliver_eats/core/commons/colors_const.dart';
-import 'package:deliver_eats/core/commons/constants.dart';
 import 'package:deliver_eats/core/commons/custom_text_theme_accessor_file.dart';
 import 'package:deliver_eats/presentation/widgets/molecules/custom_icon_button.dart';
 import 'package:deliver_eats/presentation/widgets/molecules/dashed_border_container.dart';
@@ -9,6 +8,8 @@ import 'package:deliver_eats/presentation/widgets/molecules/platform_app_bar.dar
 import 'package:deliver_eats/presentation/widgets/organisms/ui_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import '../widgets/organisms/product_cart.dart';
 
 @RoutePage()
 class OrderSummaryPage extends StatelessWidget {
@@ -35,7 +36,9 @@ class OrderSummaryPage extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: UIHelper.padding(bottom: 8),
+        padding: UIHelper.padding(
+          vertical: 12,
+        ),
         child: Column(
           children: [
             Container(
@@ -49,7 +52,7 @@ class OrderSummaryPage extends StatelessWidget {
 
                   Text(
                     'Coffee Corner',
-                    style: textTheme.textSmSemibold.copyWith(
+                    style: textTheme.textSmBold.copyWith(
                       color: ColorConstant.black,
                     ),
                   ),
@@ -59,10 +62,6 @@ class OrderSummaryPage extends StatelessWidget {
                     price: 23000,
                     ammount: 3,
                   ),
-                  UIHelper.divider(
-                    height: 24,
-                    color: ColorConstant.gray200,
-                  ),
                   const ProductCart(
                     title: 'Salmon Sushi Roll ',
                     price: 45000,
@@ -70,16 +69,13 @@ class OrderSummaryPage extends StatelessWidget {
                     note: 'Extra wasabi on the side ',
                     additional: 'Mentai sauce',
                   ),
-                  UIHelper.divider(
-                    height: 24,
-                    color: ColorConstant.gray200,
-                  ),
                   const ProductCart(
                     title: 'Chicken Egg Martabak',
                     price: 32000,
                     ammount: 1,
                     additional: '4 eggs, Extra sauce',
                     note: 'No green onions on martabak',
+                    divider: false,
                   ),
 
                   // Address
@@ -319,155 +315,4 @@ Widget _buildRow(String label, String value, {bool isTotal = false}) {
       ),
     ],
   );
-}
-
-class ProductCart extends StatelessWidget {
-  final String title;
-  final String additional;
-  final int price;
-  final int ammount;
-  final String note;
-  const ProductCart({
-    super.key,
-    required this.title,
-    required this.price,
-    required this.ammount,
-    this.additional = '',
-    this.note = '',
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ClipRRect(
-              borderRadius: UIHelper.borderRadiusCircular(all: 8),
-              child: Image.network(
-                Constants.bannerImg,
-                fit: BoxFit.cover,
-                width: UIHelper.setSp(80),
-                height: UIHelper.setSp(80),
-              ),
-            ),
-            UIHelper.horizontalSpace(8),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        style: textTheme.textSmSemibold.copyWith(
-                          color: ColorConstant.gray800,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        maxLines: 2,
-                      ),
-                      Text(
-                        additional,
-                        // maxLines: 1,
-                        style: textTheme.textXsRegular.copyWith(
-                          color: ColorConstant.gray500,
-                          // overflow: TextOverflow.ellipsis,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Rp$price',
-                        style: textTheme.textMdBold.copyWith(
-                          color: ColorConstant.black,
-                        ),
-                      ),
-                      SizedBox(
-                        width: 120,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            IconButton(
-                              style: const ButtonStyle(
-                                  backgroundColor: MaterialStatePropertyAll(
-                                      ColorConstant.rose50)),
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.remove,
-                                color: ColorConstant.rose700,
-                                // color: ColorConstant.white,
-                              ),
-                            ),
-                            Text(
-                              '$ammount',
-                              style: textTheme.textSmRegular
-                                  .copyWith(color: ColorConstant.black),
-                            ),
-                            IconButton(
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.add_rounded,
-                                // color: ColorConstant.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            )
-          ],
-        ),
-        note.isNotEmpty
-            ? Container(
-                margin: UIHelper.padding(top: 8),
-                padding: UIHelper.padding(
-                  vertical: 8,
-                  horizontal: 12,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: UIHelper.borderRadiusCircular(all: 8),
-                  border: Border.all(
-                    width: 1,
-                    color: ColorConstant.gray200,
-                  ),
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SvgPicture.asset(
-                      AssetsPath.fileIcon,
-                      width: 20,
-                    ),
-                    UIHelper.horizontalSpace(8),
-                    Expanded(
-                      child: Text(
-                        note,
-                        style: textTheme.textSmRegular.copyWith(
-                          color: ColorConstant.gray500,
-                        ),
-                      ),
-                    ),
-                    UIHelper.horizontalSpace(12),
-                    TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          'Edit',
-                          style: textTheme.textSmSemibold,
-                        )),
-                  ],
-                ),
-              )
-            : const SizedBox(),
-      ],
-    );
-  }
 }

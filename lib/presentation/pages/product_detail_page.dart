@@ -28,17 +28,39 @@ class ProductDetailPage extends StatelessWidget {
           horizontal: 16,
           vertical: 12,
         ),
-        child: ElevatedButton(
-          onPressed: () {
-            AutoRouter.of(context).push(
-              const OrderSummaryRoute(),
-            );
-          },
-          child: Text(
-            'Add to cart',
-            style:
-                textTheme.textXsSemibold.copyWith(color: ColorConstant.white),
-          ),
+        child: Row(
+          children: [
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    ColorConstant.rose50,
+                  ),
+                ),
+                child: Text(
+                  'Add to cart',
+                  style: textTheme.textXsSemibold
+                      .copyWith(color: ColorConstant.rose700),
+                ),
+              ),
+            ),
+            UIHelper.horizontalSpace(12),
+            Expanded(
+              child: ElevatedButton(
+                onPressed: () {
+                  AutoRouter.of(context).push(
+                    const OrderSummaryRoute(),
+                  );
+                },
+                child: Text(
+                  'Checkout',
+                  style: textTheme.textXsSemibold
+                      .copyWith(color: ColorConstant.white),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
       body: SingleChildScrollView(

@@ -27,39 +27,45 @@ class MenuListTile extends StatelessWidget {
       onTap: onTap,
       child: Column(
         children: [
-          SizedBox(
-            width: double.infinity,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Row(
-                  children: [
-                    CustomIconButton(
-                      ontap: onTap,
-                      svgAssetPath: iconPath,
-                      buttonHeight: 36,
-                      buttonWidth: 36,
-                      padding: 8,
-                    ),
-                    UIHelper.horizontalSpace(12),
-                    Text(
-                      title,
-                      style: textTheme.textMdRegular.copyWith(
-                        color: ColorConstant.gray900,
+          Padding(
+            padding: UIHelper.padding(vertical: 8),
+            child: SizedBox(
+              width: double.infinity,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Row(
+                    children: [
+                      CustomIconButton(
+                        ontap: onTap,
+                        svgAssetPath: iconPath,
+                        buttonHeight: 36,
+                        buttonWidth: 36,
+                        padding: 8,
                       ),
-                    ),
-                  ],
-                ),
-                if (trailingIconPath != null)
-                  SvgPicture.asset(
-                    trailingIconPath!,
-                    height: 20,
-                  )
-              ],
+                      UIHelper.horizontalSpace(12),
+                      Text(
+                        title,
+                        style: textTheme.textMdRegular.copyWith(
+                          color: ColorConstant.gray900,
+                        ),
+                      ),
+                    ],
+                  ),
+                  if (trailingIconPath != null)
+                    SvgPicture.asset(
+                      trailingIconPath!,
+                      height: 20,
+                    )
+                ],
+              ),
             ),
           ),
-          UIHelper.divider(
-              color: divider ? ColorConstant.gray200 : Colors.transparent),
+          Divider(
+            color: divider ? ColorConstant.gray200 : Colors.transparent,
+            thickness: 1,
+            height: 1,
+          ),
         ],
       ),
     );
