@@ -4,7 +4,6 @@ import 'package:deliver_eats/core/commons/colors_const.dart';
 import 'package:deliver_eats/core/commons/constants.dart';
 import 'package:deliver_eats/core/commons/custom_text_theme_accessor_file.dart';
 import 'package:deliver_eats/presentation/widgets/molecules/badge.dart';
-import 'package:deliver_eats/presentation/widgets/molecules/custom_icon_button.dart';
 import 'package:deliver_eats/presentation/widgets/molecules/platform_app_bar.dart';
 import 'package:deliver_eats/presentation/widgets/organisms/detailed_product_card.dart';
 import 'package:deliver_eats/presentation/widgets/organisms/text_form_field.dart';
@@ -22,38 +21,9 @@ class RestaurantDetailPage extends StatelessWidget {
       child: Scaffold(
         // main Appbar
 
-        appBar: PlatformAppBar(
-          title: Column(
-            children: [
-              Text(
-                'Coffee Corner',
-                style: textTheme.textLgBold.copyWith(
-                  color: ColorConstant.black,
-                ),
-              ),
-              Text(
-                'Hazelaarplein 5, 5038 Tilburg',
-                style: textTheme.textXsRegular.copyWith(
-                  color: ColorConstant.black,
-                  overflow: TextOverflow.ellipsis,
-                ),
-                maxLines: 1,
-              ),
-            ],
-          ),
-          action: Center(
-            child: Padding(
-              padding: UIHelper.padding(
-                right: 8,
-              ),
-              child: CustomIconButton(
-                ontap: () {},
-                svgAssetPath: AssetsPath.starLineIcon,
-                buttonHeight: 48,
-                buttonWidth: 48,
-                padding: 8,
-              ),
-            ),
+        appBar: const PlatformAppBar(
+          title: Text(
+            'Coffee Corner',
           ),
         ),
 

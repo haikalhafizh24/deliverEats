@@ -32,12 +32,12 @@ class PlatformAppBar extends PlatformWidget<CupertinoNavigationBar, AppBar>
       CupertinoNavigationBar(
         middle: title,
         leading: leading,
+        trailing: action,
       );
 
   @override
   AppBar createAndroidWidget(BuildContext context) => AppBar(
         title: title,
-        
         titleSpacing: 16,
         leadingWidth: 64,
         centerTitle: true,
