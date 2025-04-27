@@ -13,6 +13,7 @@ class ProductCart extends StatelessWidget {
   final int ammount;
   final String note;
   final bool divider;
+  final bool cart;
 
   const ProductCart({
     super.key,
@@ -22,6 +23,7 @@ class ProductCart extends StatelessWidget {
     this.additional = '',
     this.note = '',
     this.divider = true,
+    this.cart = true,
   });
 
   @override
@@ -82,39 +84,42 @@ class ProductCart extends StatelessWidget {
                                 color: ColorConstant.black,
                               ),
                             ),
-                            SizedBox(
-                              width: 120,
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  IconButton(
-                                    style: const ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStatePropertyAll(
-                                                ColorConstant.rose50)),
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.remove,
-                                      color: ColorConstant.rose700,
-                                      // color: ColorConstant.white,
+                            cart
+                                ? SizedBox(
+                                    width: 120,
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        IconButton(
+                                          style: const ButtonStyle(
+                                              backgroundColor:
+                                                  WidgetStatePropertyAll(
+                                                      ColorConstant.rose50)),
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                            Icons.remove,
+                                            color: ColorConstant.rose700,
+                                            // color: ColorConstant.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          '$ammount',
+                                          style: textTheme.textSmRegular
+                                              .copyWith(
+                                                  color: ColorConstant.black),
+                                        ),
+                                        IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(
+                                            Icons.add_rounded,
+                                            // color: ColorConstant.white,
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                  ),
-                                  Text(
-                                    '$ammount',
-                                    style: textTheme.textSmRegular
-                                        .copyWith(color: ColorConstant.black),
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.add_rounded,
-                                      // color: ColorConstant.white,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                                  )
+                                : const SizedBox(),
                           ],
                         )
                       ],

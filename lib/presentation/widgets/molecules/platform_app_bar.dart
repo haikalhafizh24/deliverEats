@@ -49,7 +49,7 @@ class PlatformAppBar extends PlatformWidget<CupertinoNavigationBar, AppBar>
                 ),
                 child: CustomIconButton(
                   ontap: () {
-                    AutoRouter.of(context).pop();
+                    AutoRouter.of(context).maybePop();
                   },
                   svgAssetPath: AssetsPath.arrowLeftIcon,
                   buttonHeight: 48,

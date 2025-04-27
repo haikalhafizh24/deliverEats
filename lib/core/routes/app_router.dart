@@ -7,13 +7,17 @@ class AppRouter extends $AppRouter {
   List<AutoRoute> routes = [
     AutoRoute(
       page: MainRoute.page,
-      initial: true,
+      // initial: true,
       children: [
         AutoRoute(page: HomeRoute.page),
         AutoRoute(page: CartRoute.page),
         AutoRoute(page: OrderRoute.page),
         AutoRoute(page: ProfileRoute.page),
       ],
+    ),
+    AutoRoute(
+      page: LoginRoute.page,
+      initial: true,
     ),
     AutoRoute(page: RestaurantDetailRoute.page),
     AutoRoute(page: ProductDetailRoute.page),

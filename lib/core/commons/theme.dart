@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:deliver_eats/core/commons/colors_const.dart';
 import 'package:deliver_eats/core/commons/custom_text_theme.dart';
 import 'package:deliver_eats/core/commons/text_const.dart';
@@ -37,25 +39,25 @@ class AppTheme {
     ),
     iconButtonTheme: IconButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+        foregroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
             return Colors.white.withOpacity(0.5); // Disabled icon color
           }
           return Colors.white; // Regular icon color
         }),
-        backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+        backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
             return ColorConstant.rose200; // Disabled background color
           }
           return ColorConstant.rose700; // Regular background color
         }),
-        minimumSize: MaterialStateProperty.all<Size>(
+        minimumSize: WidgetStateProperty.all<Size>(
             const Size(32, 32)), // Set minimum size
-        fixedSize: MaterialStateProperty.all<Size>(
-            const Size(32, 32)), // Set fixed size
-        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
-        elevation: MaterialStateProperty.all<double>(0),
-        shape: MaterialStateProperty.all<OutlinedBorder>(
+        fixedSize:
+            WidgetStateProperty.all<Size>(const Size(32, 32)), // Set fixed size
+        padding: WidgetStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
+        elevation: WidgetStateProperty.all<double>(0),
+        shape: WidgetStateProperty.all<OutlinedBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
@@ -64,22 +66,22 @@ class AppTheme {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+        foregroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
             return ColorConstant.rose200; // Disabled color
           }
           return ColorConstant.rose700; // Regular color
         }),
-        backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+        backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
             return ColorConstant.rose200; // Disabled color
           }
           return ColorConstant.rose700; // Regular color
         }),
-        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+        padding: WidgetStateProperty.all<EdgeInsetsGeometry>(
             UIHelper.padding(vertical: 4, horizontal: 12)),
-        elevation: MaterialStateProperty.all<double>(0),
-        shape: MaterialStateProperty.all<OutlinedBorder>(
+        elevation: WidgetStateProperty.all<double>(0),
+        shape: WidgetStateProperty.all<OutlinedBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(UIHelper.setSp(10)),
           ),
@@ -88,14 +90,14 @@ class AppTheme {
     ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
-        foregroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+        foregroundColor: WidgetStateProperty.resolveWith<Color>((states) {
           if (states.contains(MaterialState.disabled)) {
             return ColorConstant.rose200; // Disabled color
           }
           return ColorConstant.rose600; // Regular color
         }),
-        padding: MaterialStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
-        minimumSize: MaterialStateProperty.all<Size>(Size.zero),
+        padding: WidgetStateProperty.all<EdgeInsetsGeometry>(EdgeInsets.zero),
+        minimumSize: WidgetStateProperty.all<Size>(Size.zero),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
     ),

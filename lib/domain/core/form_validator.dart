@@ -1,5 +1,5 @@
-import 'package:fpdart/fpdart.dart';
 import 'package:deliver_eats/domain/core/form_failure.dart';
+import 'package:fpdart/fpdart.dart';
 
 class FormValidator {
   FormValidator._();
@@ -15,6 +15,22 @@ class FormValidator {
     }
     if (input.length > 50) {
       return left(const FormFailure.tooLong());
+    }
+    return right(unit);
+  }
+
+  static Either<FormFailure, Unit> passwordValidator(String input) {
+    const passwordRegex =
+        r"""^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};\':"\\|,.<>\/?]).{8,}$""";
+
+    if (input.isEmpty) {
+      return left(const FormFailure.empty());
+    }
+    if (!RegExp(passwordRegex).hasMatch(input)) {
+      return left(const FormFailure.invalidPassword());
+    }
+    if (input.length < 8) {
+      return left(const FormFailure.tooShort());
     }
     return right(unit);
   }

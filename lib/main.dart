@@ -18,11 +18,11 @@ void main() async {
   );
   Bloc.observer = SimpleBlocObserver();
   configureInjection();
-  runApp(const StudentLectureApp());
+  runApp(const DelivereatsApp());
 }
 
-class StudentLectureApp extends StatelessWidget {
-  const StudentLectureApp({super.key});
+class DelivereatsApp extends StatelessWidget {
+  const DelivereatsApp({super.key});
 
   // This widget is the root of your application.
   @override

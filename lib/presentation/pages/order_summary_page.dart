@@ -249,6 +249,15 @@ class OrderSummaryPage extends StatelessWidget {
                           amount: 'Rp2.000',
                         ),
                         UIHelper.verticalSpace(4),
+                        UIHelper.divider(
+                          color: ColorConstant.gray200,
+                          height: 16,
+                        ),
+                        // const Divider(
+                        //   height: 1,
+                        //   thickness: 1,
+                        // ),
+                        _buildRow('Total', 'Rp196.000', isTotal: true),
                       ],
                     ),
                   )

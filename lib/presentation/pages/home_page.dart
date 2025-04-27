@@ -246,10 +246,13 @@ class HomePage extends StatelessWidget {
                       color: ColorConstant.black,
                     ),
                   ),
-                  Text(
-                    'See All',
-                    style: textTheme.textSmSemibold.copyWith(
-                      color: ColorConstant.rose700,
+                  InkWell(
+                    onTap: () {},
+                    child: Text(
+                      'See All',
+                      style: textTheme.textSmSemibold.copyWith(
+                        color: ColorConstant.rose700,
+                      ),
                     ),
                   ),
                 ],

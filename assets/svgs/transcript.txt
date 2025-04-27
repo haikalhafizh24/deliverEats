@@ -1,0 +1,1026 @@
+
+35:37
+required terus kita bikin
+35:52
+riltasnya dahah Jadi ini nanti bakal kita pakai di
+35:59
+Page di sini ya
+36:10
+router jadi untuk sekarang
+36:16
+Arnya mana ya Coba
+36:22
+model nih di sini ini aku dulu ya gak boh ini harus pakai apa namanya
+36:30
+ee harus pakai M Mook repository cuma ini cuma buat
+36:36
+ee biar ui-nya jalan
+36:41
+dulu
+36:47
+koma jadi sini harus direfres
+36:58
+gini ya jadi di M popular artiel page-nya kita L generate-nya pakai
+37:08
+articlesl terus di sininya Kita bikin kayak
+37:17
+gini final data sama eh
+37:23
+articex Nah ini kita pak data di sini data do
+37:31
+title di sini data
+37:38
+do apa ya
+37:44
+diating nanti ini jelasin ya satu-satunya artikel model jadi
+37:53
+ini data by jadi si u 2022 ini dia itu buat yang
+38:01
+titiknya tadi ya
+38:11
+kita ini apa nih No
+38:17
+host nih
+38:30
+Oh dia multipedianya Yaudah nanti di juga oke
+38:39
+kita lanjut bikin akujelas duluali ya artikel
+38:46
+model jadi artikel model ini yang udah aku bikin dari si siapa
+38:52
+namanyak jadi misaliat
+39:03
+ini tuh ada di kita pak yang kita to dulu ya
+39:10
+nah jadi si yang iniudah aku
+39:15
+di constah ini yang buat topor dia ada dia dia
+39:24
+ada aku ialnya
+39:31
+eh
+39:37
+dulu nah ini dia dapat resultnya Nah jadi eh di artikel model ini itu
+39:44
+berdasarkan si [Musik] eh apa namanya
+39:49
+si modelnya lah Nah jadi ini sebenarnya kenapa aku bikin dua jadi inially kalau
+39:55
+di backend ya maksud struktur yang bagus Biasanya kalau sama-sama artikel atau sama-sama produk dia itu pasti modelnya
+40:02
+sama nah tapi karena ini dua api yang berbeda dan modelnya beda jadi aku bikintory dia di sini nah short url itu
+40:10
+kalau buat yang di Top Stories dia itu aku identifynya sebagai ID Karena
+40:15
+e yang di Top Stories ini dia gak punya ID dia punyanya
+40:21
+si short url mana nih URL
+40:27
+Nah inilah Dia punyanya ini diaak punya ID jadi aku biar SN identif aja buat ini
+40:35
+nah terus ada tit DII buat yang in terus
+40:41
+yang ini dia kayak siapa yang Lah terus ini
+40:48
+waktuishnya jadian bisaat di Kal
+40:58
+buat yang multimedia Nah jadi kalau di atau di Jon ser Ini dia ada yang
+41:05
+ngconvert namanya from Jon nah multimedia from J ini aku ngconvert dia
+41:12
+kalau misalnya dia jadi tipenya kalau yang misalnya dia di e apa namanya dia di popular arti dia itu string jadi dia
+41:20
+bisa langsungah tapi kalau misalnya buat di Top Stories dia itu bentuknya
+41:27
+Eh kalau buat yang di most popular article dia itu bentuknya bukan e string tapi dia bentuknya map Nah makanya aku
+41:34
+ada function buat ngconvert dia nah jadi aku pengvert dia jadi list of
+41:43
+string makanya kalau yang di Jon yang di Top Stories aku bikin dia list of string
+41:49
+dulu Nah itu bisa kalian lakukan di from J ini Jadi kalian ngubah
+41:54
+strukturolder struktur e eh responsnya tuh pakai yang from Jon ini gu
+42:01
+ya Ee sampai sini ada yang menanya
+42:10
+enggak iya selalu Diend maper-nya di modelnya Jangan taruh di logicnya sih
+42:18
+soalnya ini kan related sama ee apa sih namanya related sama
+42:25
+si siapa ya si json model ya sebenarnya kalau misal kalian taruh di domain bisa
+42:31
+aja cuma itu double work Jadi kalau Biasanya sih kalau model jadi kan ini jatnya Si artikel model ini sebenarnya
+42:39
+kan dia masuknya domain ya E karena dia model bentuknya Jadi biasanya harusnya eh taruhnya tuh di domain lah Biasanya
+42:46
+jadi ada di sini namanya eh mungkin kayak Eh misalnya kalian di E News gitu
+42:52
+ya news tuh punya Enti tapi dia punya Jason juga nah Biasanya kalau ada Enti sama Jason itu aku pisahin kalau
+42:58
+entities tu Ini Jason tu ini gitu Jadi basically semua model Itu sebenarnya
+43:04
+dari domain makanya dia tuh taruh di eh aku taruhnya di domain cuman ini karena dia tuh lebih ke arah
+43:13
+eh model yang didapatin dari respon backend Eh aku waktu itu inially Narus ini pas
+43:19
+bikin starting projectnya cuman sebenarnya kalau misalnya Eh related sama model Apun modelnya bentuknya eh
+43:26
+model dari back mau mod dari e kita bikin sendiri buat form kita itu kalian
+43:32
+taruhnya di domain jadi nanti kalian di sini bisaar e kayak Misnya nih kan kita
+43:38
+punya nih gitu kan Terus di sini kalian bisa ada du folder
+43:45
+en Nah di sini tuh ada yang entities biasa ada yang
+43:51
+J nah J Ini jadi yang sama kalianaruh di luarnya J ya buat respnya Jadi kalau
+43:58
+misalnya ini biasanya eh relevan kalau user lah user terus ada en en kan
+44:05
+biasanya buat login entities gitgitu ya nanti di bawah F ada l login enties
+44:11
+terus ini J ini buat yang rel Buat ngirim keendnya gitu karena biasanya
+44:17
+strukturnya bed sama yang kalian bikin karena biasanya ada validasi apa G yang gak termasuk ke
+44:25
+buatnya sih Jadi tergantung kebutuhan aja ya tapi eh best pracnya harusnya
+44:33
+semuanya ditaruh di domain bukan di infrastruktur bukan di Application bukan di
+44:38
+e
+44:44
+presentationu gu Ya jelas
+44:58
+Ini tuh aku lupa deh kenapa Pokoknya dia tuh e oh ini kayaknya dia tuh model model
+45:06
+jam waktunya tuh ada Kak Dia bentuknya C gitu dehingatu
+45:15
+ya Nah ini nih kayak gini jadi akuit dia Jadi
+45:24
+20205 ini buat yang convertednya yang multimia converted kalau dia empt kalau
+45:31
+dia gak punya gambar Aku ng dia as D image kalau dia eh ngekonten si Static
+45:40
+andw.com yang di eh l ke pertama Aku ng dia langsung tapi
+45:48
+kalau dia enggak contens ini aku nambahin dia di sini Jadi sebenarnya strukturnya beda-beda ya makanya kenapa
+45:54
+e aku kasih banyak conver model di sini namanya juga free Ipi ya jadi enggak
+46:00
+enggak enggak necessary harus Rapi juga sih karena dia free source gitu ya Nah jadi di M popular ini
+46:08
+strukturnya beda sama ini jadi eh buat yang fromos popular ini dia
+46:17
+id-nya tuh dia punya ID dia punya title dia punya byline tapi multimedia ini dia
+46:23
+jadi media sama yang ini tuh publish date jadi publish date titya tu sama
+46:28
+gitu ya tapi sisanya beda gu
+46:35
+ya Jadi kalau mau sih yang gak usah difine satu-satu bisa kamu copy dari
+46:41
+from jonnya aja cuman ya itulah e ada convert model lagi satu cuman ini
+46:49
+berhubung ini cuma l parameter jadi aku langsung aja deh gu tulis ulang juga gak apa-apa gitu karena dia cuma sedikit
+46:57
+Oke lanjut ke Fi help Oke sampaian tadi
+47:02
+artikel model ada yang mau nanya
+47:14
+enggak ada Man nanya
+47:27
+Oke Eh kayak masa kayaknya istirahat dulu deh kelebihan 4 menit nih biasa kan
+47:33
+Istirahat jam 9 okeat dulu kali ya 5 menit iya oke
+47:57
+oke
+48:06
+oke nah lanjut ke helper Nah
+48:11
+jadi helper itu sebenarnya buat Dar itu jadi Diya tu Global Jadi apa yang kita
+48:19
+bisa lakukan dengan itualah contonya gini ya contohnya di
+48:25
+eahu u yang
+48:32
+ini nah dia ada namanya Logger interceptor jadi misalnya gini kalau
+48:38
+misalnya eh user itu tokennya invalid gitu kan Kalau tokennya invalid Aku mau
+48:43
+ngeauto loutin dia setiap dia punya respons misalnya dari Ben tuh ngirim 404
+48:49
+atau berapa gitu ya ya atau error eh custom dari dia kalau E tokennya itu
+48:54
+invalid gitu Nah itu e bas Aku bakal naruh itu e misalnya gini kalau tokonnya
+49:01
+invalid terus dia bakal ke login automatis gitu nah Biasanya aku e makai
+49:07
+si tuh kayak gini jadi di loger intereptornya ini Aku jadiin
+49:14
+Eh aku register modulnya pakai Inter intercepttor namanya si la singletone
+49:20
+jadi dia ini cuma bisa keinaliz kali Nah buat detailnya kayak tu apa apa terus environment buat
+49:28
+apa name tu buat apa kalau ini tuh eh penjelasan kit ya Ini tuh dia buat
+49:34
+ngatur environment De environment sama prod environment Nah jadi kenapa aku taruh dia itu cuma di single S of tru
+49:42
+yaitu api helper jadi semua data source Yang aku pakai di dalam aplikasiku bakal
+49:47
+ngrefer ke Dio yang sama jadi aku gak harus initialize dia berkali-kali Nah itu kegunaan si salah satu kegunaan si
+49:54
+Dependency injection itu jadi setiap e aku bikin api request dia udah punya
+50:00
+header dia udah punya parameter-parameter lain yang dibutuhkan yang aku atur di si api helper itu Nah
+50:06
+kalau di sininya ada banyak ya Ada po ada get terus ada delete ada Put gitu ya
+50:14
+dengan menggunakan struktur yang sama gitu Jadi aku tinggal di data sourya aku tinggal pakai
+50:22
+apihpergetperp gitu Nah itu salah satuegunaan si eh Bi helper itulah Nah
+50:28
+karena si eh New York times ini cuma punya method gate dia enggak punya method e lain-lain jadi aku cuma bikin
+50:35
+dia S nah buat api respon model ini tuh sebenarnya kalau di F
+50:43
+respons model ini adalah eh struktur yang eh global gitu As in Global eh yang
+50:50
+bakal dipakai di data source di semua data source Nah kalau di sini
+50:55
+eh aku tuh dia udah punya satu kesatuan yang sama jadi ada code data error code
+51:00
+error Miss sama status nah ini sebenarnya tuh bisa kalian convert ya nanti ke kalau kayak gini doang
+51:06
+maksudnya ini kan sama nih nah ini tuh sebenarnya bisa kalian convert ke freeze Nah ini kan dia enggak pakai equitable
+51:13
+kan karena sebenarnya aku enggak ngebandingin dia sama siapa-siapa jadi ya Bisa aja langsung bikin kelas Kayak gini cuman kalau misalnya Kalianak
+51:19
+ngelakuin perbandingan gitu misalnya data di api respon 1 sama data di api respons model 2 itu sama apa enggak Nah
+51:25
+itu kalian harus nah sementara kalau kalian Pak kalian
+51:31
+tinggalulis ini aja yang ini bawahnya gak usah jadi kalau paknyaan har ini sendi atulis ini Send
+51:40
+ya Bik lagi sebenarnya Kalau buat nulis yang manual itu bisa kalian
+51:46
+Carah di internet juga byak yang
+51:52
+yaapaliah param yaananus Des modelnya lagi terus Nahin
+51:58
+lagi nah biasanya itu takes longer time dibanding kalian apa kayak nambahin
+52:03
+satu-satu gitu makanya aku udah enggak pakai equitable sih Eh pakainya FR nah ini sebenarnya Eh
+52:11
+kalau yang di IPR resons model ini aku udah pakai fre tapi eh karena eh dia
+52:18
+from jasonnya tu banyak yang berbeda karena respons dari si New York times-nya jadi ini rada ku modify
+52:27
+Jadi kalau misalnya responsnya itu dia NL aku eh ngasih Initial api response
+52:33
+itu respon status code error mage-nya enggak ada sama statusnya itu respond data. status karena semua api di New
+52:40
+York times ini punya status tapi enggak semuanya punya eh Error message-nya itu
+52:45
+namanya error message eh contoh eh di tempat lainnya tuh namanya fault Jadi
+52:53
+kalau respon status code-nya itu dia 200 dia jadi kayak dia eror tap dianya 200
+52:58
+di makanya aku bikory baru namanya from J
+53:05
+gituah ini kalau itu mengand status resp
+53:10
+at jadi iniakalitah tapiakid apanya Kay
+53:16
+html Jadi kalau dia html dia berarudahak nah
+53:25
+misnyaak Jin kayak perbandingan di function gitu nanti bakal dipakai di
+53:32
+handler di api configuration nih yang
+53:37
+ini nah buat yang api helper sama eh respons model jelas
+53:53
+gak ada yang masih bingung
+54:06
+Masih jelas oke eh Jelas oke ya pokoknya ini kalian
+54:14
+nantinya emang ini terkesannya kayak unfamiliar ya Eh cuman kalau kalian udah biasa ngdevelop pakai atau basically
+54:22
+bahasa lain lah Pasti kalian nemu juga sih Eh approach-nya gimana g Karena basically kan semua code programming itu
+54:29
+sama aja tinggal beda frameworknya aja S bahas yang dipakai J sebenarnya kalau
+54:35
+dari logic ya sama-sama aja gitu ini Pokoknya udah lengkap lah
+54:42
+handlingu buat si apa si New York times soalnya pertama kali aku ngevelop juga
+54:48
+kok banyak yang bingung kok ini kayak gini ya makudnya aku bingung gitu sama respons aku ini gini yau ini gini ya
+54:53
+Jadi ya aku stand aja di resp model gitu
+54:59
+oke lanjut ke api helper jadi dia punya e aku punya file lagi namanya api
+55:06
+configurations Nah sebenarnya api configuration ini dipakai kalau misalnya kalian punya meod yang lain Jadi kalian
+55:11
+gak harus ng initialize kalian ggak harus ngelakuin checking lagi yang formatnya valid atau enggak itu di
+55:18
+setiap meod yang kalian buat di api helper ini jadi dia namanya handle api
+55:23
+respon ini yang kayak aku bilang kalau formatnya valid kalau formatnya enggak valid ini aku pakai guard close ya jadi
+55:29
+ng-handle negative conditionsnya dulu kita bakal ngrurn Error E respon valid
+55:35
+Exception jadi di sini aku udah bikin custom Exception yang biasa aku pakai di waktu ngdevelop aplikasi aku jadi
+55:43
+overall project ini tuh sebenarnya eh kebanyakan udah ngikutin struktur
+55:48
+yang bakal aku bikin kalau misalnya aku bikin Project baruah rapihnya segala macam itu udah kayak gini cuman kalau
+55:54
+misal kalian nanti In The Future ada yang bisa diimprove aja gak apaa Jadi pakai aja sesuai kebutuhan kalian aja gu
+56:01
+ya Nah kalau misalnya dia sukses gitu formatnya valid gitu ya dia punya riset
+56:08
+dia punya e yang lain-lain nah ini namanya e kita bisa pakai api respon
+56:13
+model from Jason Nah kita return responsnya di from Jason Ini yang tadi
+56:18
+udah k handle Nah kalau datanya itu Nul e danak alias enggak punya data Aku
+56:25
+bakal ng error precondition Exception jadi Exception ini tergantung nanti eh
+56:30
+sama kebutuhan kalian jadi contoh gini kenapa aku punya Exception yang beda-beda contohnya misalnya nih kalian
+56:36
+mau login gitu kan user itu harus ngisi satu lokasi Eh misalnya terus kedua ada
+56:42
+nomor telepon gitu ya nah eh misalnya eh dari backend Udah ng-rurn nih oh dia nih
+56:48
+user ini enggak punya lokasi Nah aku mau nampilin pop up ya ngasih tahu kalau dia itu
+56:54
+ee harus ngisi lokasi dan navigasi ke page lokasi Nah kalau yang ggak punya
+56:59
+nomor telepon ngasih tahu pop up kayak dia harus ngisi nomor telepon dan navigasi ke e page e phone number gitu
+57:07
+buat buat nambahin phone number Nah itu kan dua hal yang berbeda tuh Nah makanya ada Exception ini Jadi ini tuh basically
+57:13
+buat e kalian kalau ada custom error dari si backend misalnya Si backend tu e
+57:18
+kayak tadilah dia tuh sukses Sebenarnya dia kredensialnya tuh ada cuman dia harus sebelum dia bisa menggunakan
+57:24
+aplikasinya dia harus ngisi lokasi dulu dia harusisi nomor telepon dulu gitu Nah itu
+57:30
+kan dua kondisi yang berbeda jadinya beda handingnya juga kanahalian
+57:36
+baom eror dia Pak Ini dihh kalau iniama
+57:43
+ini bertiama Miss ya ya berarti
+57:55
+dia eh error error modelnya itu kayak gimana gitu eh maksudnya error Respon
+58:00
+yang di return backend dia tuh missing apa si usernya tuh enggak punya apa dan kalian bisa nge-handle itu di aplikasi
+58:06
+kalian gitu Ya jelas engak sampai
+58:23
+sini mana masih
+58:31
+bingung jas Sepertinya kalau di lihat dari respon
+58:36
+chat itu kayaknya pertanyaan yang tadi sih mas Tapi ya udah aku anggap ngerti
+58:42
+ya semuanya ya ah e lanjut ke nah ini semuanya udah ya
+58:50
+makanya aku register dia ke singleetone biar dia ke initializ satu kali doang jadii helper ini di dalam satu ee di
+58:57
+dalam aplikasi kita tuh cuma satu jadi kita semua bakal ngrefer ke api helper ini dan Dio ini makanya dia pakaizy
+59:05
+singletoneah gitu beda ya sama injectable Jadi kalau injectable itu kamu bisa inject eh beberapa Maksudnya
+59:13
+kamu bisa inject dia dengan berbagai macam e page kalau leg singleton itu dia
+59:19
+engak inject Dio yang sama dan dia cuma ngeinitialize sekali doang pas aplikasi kalian Eh running lah nantinya gitu
+59:26
+kalau jadi Tapi kalau mau lihat detailnya tentang penjelasan Dependency injection ini kalian bisa langsung
+59:32
+navigate ke package flutter di pubdnya aja ya Eh namanya nih injectable package
+59:40
+injectable oke nah
+59:47
+sekarang kita ke infrastruktur
+59:52
+eh kita bikin infrastruktur baru Nah namanya news di sini ada data
+1:00:01
+source dan di sini ada
+1:00:07
+repository Nah di sini kita bikin news data
+1:00:15
+source.b gu ya kita bikin di sini clelass
+1:00:20
+news data source kita bikin di sini final
+1:00:28
+helper hel data source kita bikin di sini
+1:00:34
+future l artikel model
+1:00:41
+Nah top
+1:00:46
+Stories kita bikin functionja dulu ya kita punya final resp
+1:00:56
+ap helper get
+1:01:02
+pnya constan Top
+1:01:11
+Story ini ya Nah terus
+1:01:19
+kita dia Pak karena dia bnya l biasa ya kita
+1:01:27
+define dia l dulu biar kita punya kita bisa ngbaca dia apa
+1:01:36
+terus
+1:01:51
+kitaah ituya dia ya aku dari 0 sampai 20 nah
+1:01:58
+Yaudah jadi kalau misalnya dia dia l kalau 20 ya
+1:02:05
+diaalian bisah jadi in the jadi
+1:02:15
+loweritnya soal kan kalau gak Pak tu kalian harus
+1:02:23
+paknya itu lebih dari 20 gitu ya atau
+1:02:32
+misalnya pokoknya lebih dariak Mas
+1:02:37
+jadius kalau mis dia dariama ini ya
+1:02:43
+kalian bikin Jadi 20ja tapi kalau di 20 yaudahanud
+1:02:58
+G terus di sini artikel model from
+1:03:11
+Jason nah ini ya
+1:03:18
+sampai sini ada yang mau nanya engak kita bikin functions
+1:03:23
+buat ininya aja dulu eh apa api
+1:03:38
+callnyaana teman-teman
+1:03:45
+Oke Oke Lanjut Ya ini dia udah ng generate si aku ilot
+1:03:58
+Oke dahah kita udah bikin new data source-nya sekarang kita
+1:04:04
+bikin Oh ya ini ada yang ketinggalan ya harus pakai
+1:04:11
+injectable karena apa Karena SII helper ini kan kita gak ngintializ kan jadi
+1:04:16
+kalau nginject ini dia bakal nginject sama api helper yang udah diinaliz di awal
+1:04:24
+di eh bukan
+1:04:30
+di injection Ah ya di injection lah di sini
+1:04:37
+injection Nah di sini Jadi kalau misalnya eh di injection config ini
+1:04:43
+kalau kita ngeregister dia sebagai l singl tone makanya dia ada si api helper ini jadi apapun yang menggunakan api
+1:04:50
+helper kalau kita inject dia bakal ngrefer ke api helper ini Nah ini salah satu gunanya si dependensi injection
+1:04:58
+itu lanjut kita bikin news
+1:05:08
+repository aku kebiasaannya gini soalnya Ya jadi aku tuh selalu bikin data source sama repositorynya dulu baru bloknya
+1:05:15
+biar enggak bolak-balik gu ya nah jadi buat
+1:05:23
+repository Kan aku bilang ya kemarin kita harus pakai interface ya kan
+1:05:29
+nah jadi interfaceennya itu kita bikin di domain gitu ya kita bikin di sini ada
+1:05:36
+namanya news terus di sini aku
+1:05:41
+taruh repository gunanya apa Jadi kalau misalnya kamu ng singone dia sebagai in
+1:05:49
+eh repository si abstrak ini yang kita pakai dibit kita atau dipakai di
+1:05:55
+applications kita Nah jadi kalau misalnya kita l single ton-nya mau ng-refer ke Mook repository gitu yang
+1:06:00
+ngr return damy data bukan ke fi-nya Nah ya udah kalian tinggal modify si eh
+1:06:06
+repository-nya aja instead of si eh applications-nya gitu soalnya kan
+1:06:11
+biasanya kan di applications tuh dia banyak ya Misalnya let's say news repository itu dipakai di 20 kubit gitu
+1:06:18
+20 kubit kalian harus ganti satu-satu tuh kalau kalian initializ-nya pakai news repository langsung nah kan itu
+1:06:25
+agak jelek ya nah jadi mending kita gantinya di satu tempat aja yaitu di news repository aja jadi dia eh mau
+1:06:32
+ngeinject ke mana nih mau ke m repository atau mau ke news repository
+1:06:38
+gitu contohnya gini ya misalnya aku punya
+1:06:44
+eh abstrak CL k g ya terus aku di sini E News
+1:06:53
+repository nah terus ini ada
+1:07:06
+filtererure koma list model nah ini yang aku bilang ya
+1:07:12
+kalau left itu error kalau yang right itu
+1:07:18
+e yang datanya ya
+1:07:24
+teruster ah gini ya Jadi kita punya new repository ini terus kita baru bikin Si
+1:07:32
+new repositornya jadi contoh kita
+1:07:47
+bikinory kita punya dua overu
+1:07:52
+mod kitaak data source
+1:07:59
+eh data source Nah gini ya Nah jangan lupa di
+1:08:08
+sini kalian taruh si la singletone s in
+1:08:14
+repository Nah jadi misalnya nih kalian menggunakan eh data get most popular ini
+1:08:21
+di cubit eh di eh 4 qubit ini Nah kalau
+1:08:27
+kalian Langsung ng initialize di kalkulator kubit ini sebagai news repository let's say
+1:08:35
+kalau misalnya news repository itu belum ready api-nya dari backend kalian harus ngeganti satu-satu dari e siqbit ini Nah
+1:08:42
+itu kan B approach ya Makanya eh maksudnya kayak siapa tahu nanti ada human error kita lupa gitu kan ngeganti
+1:08:48
+di salah satu cubitnya pas api-nya Udah ready Nah makanya aku pakai si news
+1:08:55
+repository jadi news ada news repository sama mo repository buat news Nah kalau misal Aku pakai yang mo lazy single tone
+1:09:02
+ini tinggal aku giniin aja jadi si mok-nya yang ku nyalain jadi moknya yang ku nyalain kayak gini nah ini nanti dia
+1:09:09
+begitu diaakai si in repository ini E atau interface-nya dia bakal ng-refer ke
+1:09:15
+Mook instead of e actual api-nya Nah makanya eh kita pakai si interface itu
+1:09:21
+jadi kita enggak ngeganti satu-satu di application atau e di file yang kita pakai si
+1:09:27
+repositori ini gitu jadi Emm lebih clean ya Jadi kalian Cuma
+1:09:34
+ngeganti di satu tempat yaitu di news repository atau di Mook repository-nya tuh sampai sini jelas enggak yang
+1:09:54
+nanya oke em iya Eh bukan jadi mok tuh misalnya
+1:10:00
+gini misalnya backend kalian belum ready tapi kalian jalannya paralel sama backend kalian jadi engak tunggu-tungguan gitu loh backend
+1:10:07
+ngdevelop tapi dia udah punya struktur aslinya struktur Jason yang mau dia buat dan kalian tuh eh bisa ngerjain ui-nya
+1:10:15
+dulu sama logicnya Jadi jalannya barengan gitu mereka ngdeploy api-nya kita
+1:10:20
+eh tetap bisa ngdevelop e ui-nya Nah makanya bisa Pak pakai mok jadi nanti
+1:10:26
+nge-return-nya Misalnya gini kan em aku bikinin dulu ya
+1:10:49
+[Musik] trnya Nah contoh gini
+1:10:57
+kita kan kalau ngambil dari api itu kan gini
+1:11:04
+ya Eh top
+1:11:12
+Stories pop nah terus kita
+1:11:19
+return Nah kita bikin kayak gini ya Nah nanti kalau misalnya kalian punya repositor yang misalnya backendnya belum
+1:11:26
+Jadi kalian Tinggal bikin gini aja eh Mook news
+1:11:35
+repository Nah jadi copy aja sama persis Soalnya kita ganti ininya jadi mok
+1:11:44
+salah terus Nah jadi kalau misalnya Kalian mau
+1:11:52
+pakai mok Nyalain ini uncom yang ini jadi di sini kalian bikin yang kayak
+1:11:59
+tadi ya ee e e ini haus final
+1:12:06
+articles kalau model id-nya satu
+1:12:13
+title-nya artikel byline-nya
+1:12:20
+linteng multimedianya [Musik] empty terus publish dat-nya
+1:12:29
+eh 2024
+1:12:34
+403 ya Nah ya udah jadi tinggal gini Jadi
+1:12:40
+kalau misal kalian Pak mau pakai yang mok ininya hapus ininya hapus Jadi intinya kalau
+1:12:49
+misalnya kalian punya mok gini
+1:12:55
+nah kalian punya mok kayak gini ya Ya udah nanti eh si interface ini bakal
+1:13:01
+ngrefer ke si m new repository ini yang isinya hardcoded kalian Aku biasanya hardcodednya gak kayak gini sih pakya
+1:13:07
+Jon file Jon gitu Jadi aku ngad dari Jon file gitu biar lebih biasanya kan dari
+1:13:13
+backend juga pakya Jason kan diaasih aku kan biasanya Jason kan Ya tapi ini salah satu caranya juga Biar lebih gampang
+1:13:19
+juga nunjukin Nah jadi kalau misalinya belum ready tapi kalian mau ngevelop
+1:13:24
+ui-nya n kalian e bisa minta respons yang bakal si backendnya buat terus
+1:13:30
+Kalian lanjutin e Ipi callnya di sini kalian bisa kasih buat ng loading
+1:13:38
+loading indikatornya yauture delete duration gitu Jadi ini buat istilahnya
+1:13:43
+buat kalian nampilin UI loading baru ng Arel ini ya salah satu
+1:13:51
+kegunaaning gitu
+1:13:56
+ini
+1:14:13
+ajaama kayat adaver ada
+1:14:26
+er Jadi kalau erornya itu Conto G
+1:14:31
+ya chatnya kalau backendnya udah ready
+1:14:38
+tergantung sih sekaku apa perusahaan aku pernah di perusahan yang
+1:14:43
+kalau misalnya dia gak adaudah harusyap dan harus ada
+1:14:54
+testingama dia eh kalau backendnya gak ready doang baru ada moknya gitu Jadi
+1:14:59
+tergantung sekaku apa sih perusahaannya tapi ya b way Sebenarnya aku lebih prefer yang itu sih waupun developnya
+1:15:05
+pasti agak lama ya karena e jatuhnya tuh biar kalau misalnya ada
+1:15:12
+permasalahan di backend-nya atau apa gitu kita harus ngr harus ngdevelop Tapi
+1:15:18
+backend-nya tiba tiba bermasalah gitu Jadi kita gak repot-repot lagi bikin moknya mok strukturnya gitu sih
+1:15:26
+Oke lanjut di sini eh nih aku aku
+1:15:32
+tunjukin salah satu data source eh salah K
+1:15:39
+dator nah ini ada namanya handle api yang aku bikin dia
+1:15:45
+kayaku nah ini extion yang aku bilang jadi kalau kalian itu adaomnya aku B ng
+1:15:52
+token invalid terus sisanya tu ya nanti kalau misalnya di sini dia ada e
+1:15:58
+missing phone number kalian bisa pakai if is Exception return number Exception
+1:16:06
+gitu contohnya gitu Yaum untuk sekarang ya karena gak ada Apun selain dari
+1:16:12
+server jadi aku pak langsung pakai ini aja gak pakai handle tadi Eh
+1:16:19
+Oke sampai sini jelas gak
+1:16:35
+eh oke log repository Oh ini aku
+1:16:45
+komen cck tel ini aku uncomen
+1:16:53
+wah kalau di flut moknya didefine sendiri ya Ya bisa aja sih generate Aku biasa pakai script Kalau yang kayak gitu
+1:17:00
+e Biasanya aku bikin script sendiri eh buat nggenerate
+1:17:06
+mooknya jadi harus ada scriptnya sih Aku gak tahu sih kalau ada library yang lain aku sih kalau selama bisa bikin sendiri
+1:17:12
+dan enggak terlalu ret aku bikin sendiri sih daripada pakai package soalnya aku enggak tahu relability package yang lain
+1:17:18
+kan Apakah dia verified atau apa Jadi aku enggak mau take Ris aja cuma ya
+1:17:24
+kalau compannya masa bodo ya Ya udah pakai aja cari aja kayaknya ada sih
+1:17:29
+Harusnya
+1:17:35
+sihau mana tadi Oh ya new repository ya
+1:17:40
+Ini udah kita bikin yang mana dulu ya kita bikin yang mous popular artikel
+1:17:46
+dulu kali ya kita di sini bikin
+1:17:56
+Mus eh kok
+1:18:03
+hilang Man most populer most populer kan
+1:18:10
+oke eh kurang ini ya kurang artikel
+1:18:16
+belihat dulu
+1:18:28
+ini most popular artikle
+1:18:38
+oke eh di sini aku bikin
+1:18:45
+dia ini terus
+1:18:50
+akuc oh
+1:18:56
+nah terus di sini kayak gini di
+1:19:03
+sini required option heer
+1:19:09
+valueles ad
+1:19:14
+aduhat artikles ini import fpard
+1:19:20
+nih ganti F failure vertial terus ada
+1:19:28
+loading ya terus kita bikin factory
+1:19:33
+Nah gini kasih koma terus
+1:19:39
+Mouse aku sih selalu biasain ya aku ada unmodified walaupun engak
+1:19:46
+kepakai jadi e in cas aja kalau misal dia
+1:19:56
+apa namanya ada sesuatu yang harus diubah gitu ada maksudnya ada default
+1:20:01
+value-nya loading false
+1:20:06
+terus Failure e aku ganti ini aja deh
+1:20:24
+oke Oke lanjut ke cubit-nya terus di sini taruh injectable
+1:20:31
+Nah di sini dia pakai injak tebal karena kita pakai si inus repository-nya itu
+1:20:37
+nah ini this ini repository kita bikin functionsnya get
+1:20:45
+most popular emit state
+1:20:52
+unmodified copy with loing through terus e final di
+1:21:02
+respon new repository get most
+1:21:08
+popular ini ya terus
+1:21:17
+emitmodified copy
+1:21:23
+with faure or subed articles option of response Nah jadi e
+1:21:33
+kalau kalian nanya kenapa aku pakai options off kenapa kenapa di sini Kenapa engak ke format
+1:21:42
+ya nah jadi kenapa aku pakai options di sini Jadi kalau misalnya kalian
+1:21:47
+eh enggak pakai option kalian tuh jadinya harus ngrurn left atau right
+1:21:53
+gitu jadi kan kalian enggak mau ng-reurn write kan karena kalau WR itu kan berarti kalian Ah ada datanya jadi non
+1:21:59
+itu inialnya biar aku bisa ng-load si is loadingnya jadi sama aja kayak Nul gini
+1:22:05
+Jadi kalau penggunaan option itu kalian nanti bisa baca-baca lagi di dokumentasi functional programming-nya di fpd Jadi
+1:22:12
+kalau option off itu eh option itu dia gantiin e fungsi nul-nya ini jadi
+1:22:17
+makanya aku pakai dia option jadi Initial state-nya tuh Non nah begitu dia ada datanya ya udah antara f valure atau
+1:22:25
+list artickle model gitu Jadi pas initialnya itu aku enggak ngakdefine dia f valure atau datanya tapi aku ngrurn si
+1:22:32
+option-nya ini jadi non gitu ya Nah buat tahu eh dia itu eh Nul atau
+1:22:42
+enggak Nah aku pakai option of si response jadi dia tuh ngeaccept eh Apun
+1:22:49
+deh tipe apapun dari si datanya tu jadi kalau ada data ya udah ee Berarti dia
+1:22:55
+pakainya ee Berarti dia masuknya ke S kalau dia enggak ada datanya dia non
+1:23:01
+gitu sampai sini ada mananya enggak
+1:23:37
+mana ada yang mau nanya
+1:23:50
+lagi Ya masinnya masih aman yang lainnya
+1:24:11
+gimana Aman nialinnya aman Oke Nah ya udah
+1:24:18
+sekarang ini kita pakai Ya kalau gitu most populernya
+1:24:26
+ah Refresh dulu terus kita pakai
+1:24:34
+yanga aja presentation
+1:24:48
+pageage terus most Pop
+1:24:54
+artik P jadi di sini kan aku kan pakainya
+1:25:02
+si aku DII terus nanti itu baruil semua
+1:25:09
+datanyaususnya di sini dia kan yang ditampil Ca t jadi
+1:25:15
+ini terus di sini
+1:25:23
+pakider kalian harus pakai get it nah ini most
+1:25:30
+popular artikle qwi Eh nah ini ada injection ini ada block
+1:25:43
+provider Nah di sini karena aku pas mau engak initialize ini aku ah manggil aku
+1:25:48
+panggil aja di sini get mular aku panggil pas iniial gu ya
+1:25:59
+terus ini ee salah di
+1:26:07
+sini kita bikin dia Mana nih generate
+1:26:13
+most popular article Nah di sini di blog
+1:26:19
+Builder kita bikin most popul
+1:26:25
+eh most popular
+1:26:38
+articlesit bentar
+1:26:46
+Oke lanjut di sini e aku bikin dia Return
+1:26:54
+articles ini fold ini
+1:27:00
+Entar ya aku copy dulu aja ini kalah state. faure or succeed
+1:27:09
+articles Nah di sini Nih aku kasih dia loadingnya state.
+1:27:16
+loading center CH UI helper loading
+1:27:27
+nah terus di sini kurang
+1:27:32
+Kom benarak sih Koma sih
+1:27:41
+enggak terus [Musik]
+1:27:47
+ini nahxing itu basically gak ada apa-apa yang di ya sama kayak void lah
+1:27:53
+unit tapi ini widget terus ini respon Nah ini baru Initial datanya
+1:28:01
+respon F terus di sini
+1:28:09
+faure terus di sini Failure faure
+1:28:16
+when from servver eh
+1:28:28
+ini t Oh ini ganti jangan
+1:28:34
+ya Nah yang ini artikelnya
+1:28:41
+jadi inii aku tulis kayaknya kurang di
+1:28:48
+siniah nah di artikel sini yang tadi
+1:28:58
+Nah ini apa nih string is not
+1:29:05
+in ya responsnya Ada berubah
+1:29:11
+ya Of Index apa nih
+1:29:32
+datanya string data
+1:29:41
+result data oh dia langsung l get most popul ini gak pada
+1:29:48
+reser karena kilot ternyata Oke jadi oh ya kalau misal Kalian mau ng
+1:29:55
+dibug ada error kalian bisa nyalain ya exceptions kalau kalian pakai f
+1:30:04
+code nah ini dapat ya kita ke news
+1:30:12
+page hmm ini articles ini
+1:30:19
+koma artikel Nah ini nih dia di artikel
+1:30:24
+D leng dleng clim e
+1:30:32
+0 sampai 3 terus di sini di newscard
+1:30:37
+ini kita
+1:30:45
+return terus ini final data dot data
+1:30:51
+sama artikel next
+1:30:58
+Eh ini sama yang kita pakai di most
+1:31:06
+popular page ya kita giniin
+1:31:12
+aja nah ini
+1:31:19
+erornya news card
+1:31:28
+H multimedia nah kebalik
+1:31:35
+ya kebalik
+1:31:55
+Oke sampai sini ada yang mau nanya
+1:32:09
+Enggak belum ya Oke jadi karena kita tinggal 4 menit lagi jadi sama ya E
+1:32:16
+mungkin tas yang selanjutnya yang terakhir itu kalian bikin yang kayak gini e buat ngnya
+1:32:24
+nampilin yang ini gampang sih kalau ini
+1:32:30
+tinggal gini aja sebenarnya ya itulah yang most popular Arnya aja
+1:32:49
+okeentar ya kita Pop page balik ini harusnya image
+1:32:56
+source ini
+1:33:01
+desk ini ya Ah ini udah jadi kalian Tinggal bikin yang ini
+1:33:28
+ikikan yang ini buat Fi
+1:33:45
+call-nya semua semua tipenya berarti semua kategori Iya semua tipenya ya ini
+1:33:51
+sebenarnya satu kali bikin api aja sih kan udah ada parameternya section J ya
+1:33:57
+bikin api callnya aja bikin blognya aja Oke Mas Bagas kalau mau bedain handler
+1:34:02
+masing-masing itu dari yangure itu nih jadi kalau misalnya dia fromver
+1:34:09
+S nanti kamu di listener jadi kan ini misalnya from server s ada from ini
+1:34:15
+akuihnya aja ya fromver S terus Ada token
+1:34:20
+invalid terus show up
+1:34:25
+error DST gitu ya nah jadi kamu bikin exceptionnya yang tadi kayak ak bilang
+1:34:30
+pakai si handle api Val tadi kamu bisa lihat recordingnya sih cuman ya pakai
+1:34:36
+yang tadi ya pakai yang handle api Val samain
+1:34:42
+Exception di eh api configuration Nah jadi di sini
+1:34:49
+tuh checking checking if e-nya itu E itu
+1:34:55
+atau error ya if e sama custom
+1:35:02
+extion kamu return apa Nah dari sini
+1:35:07
+return yang ini nih return yang from server S atau yang token
+1:35:13
+invalid atau show pop up error G ya terus habis itu dari sini
+1:35:19
+nanti kamu bisa dari yang mana sih yang ini kamu bisa gini faure
+1:35:26
+when from server S gitu kan kita mau nampilin TS terus nanti ada lagi from
+1:35:31
+Apa sih tadi apa E token invalid gitu ya
+1:35:36
+token invalid terus ini gak ada isinya terus nanti kamu u handler
+1:35:44
+l terus ini lagi e
+1:35:50
+up terus ini bikin eh eh I handler show
+1:35:57
+pop up ini sih jadi kita bikin dulu di api
+1:36:06
+configuration-nya yang kayak gini if model D status sama
+1:36:18
+ABC return eh future eh eror misalnya apa
+1:36:25
+E Exception ini ada apa aja sih exceptionnya Entar aku lupa bikinu
+1:36:31
+sendiri default Exception gitu misalnya kalau e model statusnya ini biasanya
+1:36:38
+dari integer e aku convert Ke sinilah Soalnya backendku rata-rata kalau custom
+1:36:44
+Error itu dia pakainya string bukan integer jadi misalnya gini mode status Nah kayak gini kan terus kita bikin file
+1:36:51
+yang handle api ini Jadi kalau if errornya ini sama dengan si default
+1:36:57
+Exception return apa dari sini nah terus nanti cara handle di page ya kayak gini
+1:37:06
+tadi Mas
+1:37:13
+Bagas Iya makanya pakai UI handler kan bloknya itu kan perage
+1:37:20
+Makanya pakai UI handler buat apa yang mau kita kita show
+1:37:28
+gitu dan Enggak setiap page punya enggak setiap api dia punya custom error gitu
+1:37:33
+kan cuma beberapa page aja contohnya login gitu kan login dia punya custom apa error apa
+1:37:39
+gitu Jadi tergantung kebutuhan aja karena si app Failure ini kan bentuknya maybe when kan jadi kalau or else kamu
+1:37:45
+mau defaulttin ke texs juga bisa cuman di clashclash yang kamu handle aja tapi
+1:37:50
+biasanya aku pakainya di UI Handler ar ya jadi karena aku malas ngdefine
+1:37:59
+satu-satu Jadi aku pakai
+1:38:06
+namanya handle erorah di nah handle erornya ini kakai di
+1:38:15
+mana DII Jadi kalau misal dia option ini
+1:38:20
+hand ernyaudahsung akuuh jadi ak PG handle error aja di Failure ini jadi
+1:38:26
+nanti si handle error ini nih yang bakal ng Kayak misalnya nih Kalau token
+1:38:32
+invalid Aku mau nampilin ini gitu sih tergantung kamu mau naruhnya di
+1:38:39
+mana Kalau aku kan malas ya kalau harus nulis satu-satu kayak gini di page jadi aku bikin handle error aja di WH helper
+1:38:46
+gitu
+1:38:51
+oke jelas engak ya Mas bagasas
+1:39:02
+ya Iya sumber penyakit memang itu kesalahan yang aku lakukan dulu nulis
+1:39:08
+kayak ginian satu-satu ujung-ujungnya pusing dan ini masih pakai maybe map
+1:39:14
+harusnya pakai maybe when juga gitu
+1:39:20
+itu deh ee ada yang mau nanya lagi paswaga jelas
+1:39:27
+ya buat tugasnya ada yang mau nanya lagi
+1:39:53
+gimana teman-temanku ap sudah jelas
+1:40:07
+oke Masa aku balikin ke masa kali ya alright
+

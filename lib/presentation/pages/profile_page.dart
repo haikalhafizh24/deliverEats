@@ -3,6 +3,7 @@ import 'package:deliver_eats/core/commons/assets_path.dart';
 import 'package:deliver_eats/core/commons/colors_const.dart';
 import 'package:deliver_eats/core/commons/constants.dart';
 import 'package:deliver_eats/core/commons/custom_text_theme_accessor_file.dart';
+import 'package:deliver_eats/core/routes/app_router.gr.dart';
 import 'package:deliver_eats/presentation/widgets/organisms/menu_list_tile.dart';
 import 'package:deliver_eats/presentation/widgets/organisms/ui_helper.dart';
 import 'package:flutter/material.dart';
@@ -89,19 +90,19 @@ class ProfilePage extends StatelessWidget {
             children: [
               MenuListTile(
                 title: 'Terms of Service',
-                iconPath: AssetsPath.userFillIcon,
+                iconPath: AssetsPath.termsIcon,
                 onTap: () {},
                 trailingIconPath: AssetsPath.chevronRightIcon,
               ),
               MenuListTile(
                 title: 'Privacy Policy',
-                iconPath: AssetsPath.pinIcon,
+                iconPath: AssetsPath.privacyIcon,
                 onTap: () {},
                 trailingIconPath: AssetsPath.chevronRightIcon,
               ),
               MenuListTile(
                 title: 'Help',
-                iconPath: AssetsPath.paymentFilledIcon,
+                iconPath: AssetsPath.helpIcon,
                 onTap: () {},
                 trailingIconPath: AssetsPath.chevronRightIcon,
                 divider: false,
@@ -114,9 +115,11 @@ class ProfilePage extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                AutoRouter.of(context).push(const LoginRoute());
+              },
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
+                backgroundColor: WidgetStateProperty.all(
                   ColorConstant.rose50,
                 ),
               ),

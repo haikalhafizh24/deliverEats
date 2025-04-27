@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:auto_route/auto_route.dart';
 import 'package:deliver_eats/core/commons/colors_const.dart';
 import 'package:deliver_eats/core/commons/custom_text_theme_accessor_file.dart';
@@ -107,7 +109,7 @@ class CartPage extends StatelessWidget {
                   ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(ColorConstant.white),
+                          WidgetStateProperty.all(ColorConstant.white),
                     ),
                     onPressed: () {},
                     child: Text(

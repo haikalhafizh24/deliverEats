@@ -71,8 +71,8 @@ class TextFormFieldCustom extends StatelessWidget {
             ),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(UIHelper.setWidth(12)),
-              borderSide: BorderSide(
-                color: ColorConstant.gray200.withOpacity(0.8),
+              borderSide: const BorderSide(
+                color: ColorConstant.gray200,
               ),
             ),
             focusedErrorBorder: OutlineInputBorder(

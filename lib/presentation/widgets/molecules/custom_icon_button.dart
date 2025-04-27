@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:deliver_eats/core/commons/colors_const.dart';
 import 'package:deliver_eats/presentation/widgets/organisms/ui_helper.dart';
 import 'package:flutter/material.dart';
